@@ -1,0 +1,5 @@
+<ActionBar id="actionBar" class="h1 extra_bold black">
+    <NavigationButton tap="tapSearch" icon="font://&#xf208;" ios:class="icon" android:class="h5 icon" />
+    <Image src="~/images/logo_80.png" stretch="aspectFit" android:height="50"/> 
+    <ActionItem tap="tapFilter" ios.position="right" icon="font://&#xf143;" ios:class="icon" android:class="h5 icon" />
+</ActionBar>

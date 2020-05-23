@@ -1,0 +1,46 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    navigatingTo="onNavigatingTo"
+    actionBarHidden="true">
+    <GridLayout rows="*,auto">
+        <Tabs row="0" id="tab" selectedIndexChanged="selectedIndexChanged" zIndex="0">
+            <TabContentItem>
+                <GridLayout id="bg_0" rows="auto,*">
+                    <!-- <Label text="Publica un empleo" class="h0 pl padding black extra_bold" textWrap="true"/>
+                    <Label text="Es fácil. Simplemente publica un empleo y recibe ofertas competitivas de parte de freelancers en cuestión de minutos." textWrap="true" class="h2 pl_l_r black"/> -->
+                    <Label row="0" text="Aplica a empleos" class="h0 pl padding black extra_bold" textWrap="true"/>
+                    <Label row="1" text="Es fácil. Sube tu curriculum y postula a los mejores empleos rápidamente." textWrap="true" class="h2 pl black" ios:paddingBottom="180" verticalAlignment="bottom"/>
+                </GridLayout>
+            </TabContentItem> 
+            <TabContentItem>
+                <GridLayout id="bg_1" rows="auto,*">
+                    <Label row="0" text="Escoge freelancers" class="h0 pl padding black extra_bold" textWrap="true"/>
+                    <Label row="1" text="Cualesquiera sean tus necesidades, habrá un freelancer cerca tuyo que se encargará de ello." textWrap="true" class="h2 pl black" ios:paddingBottom="180" verticalAlignment="bottom"/>
+                </GridLayout>
+            </TabContentItem>
+            <TabContentItem>
+                <GridLayout id="bg_2" rows="auto,*">
+                    <Label row="0" text="Mapa de empleos" class="h0 pl padding black extra_bold" textWrap="true"/>
+                    <Label row="1" text="Visualiza en un mapa las mejores ofertas de empleo y oferta los servicios a todo el mundo." textWrap="true" class="h2 pl black" ios:paddingBottom="180" verticalAlignment="bottom"/>
+                </GridLayout>
+            </TabContentItem>
+            <TabContentItem>
+                <GridLayout id="bg_3" rows="auto,*">
+                    <Label row="0" text="Paga de manera segura" class="h0 pl padding black extra_bold" textWrap="true"/>
+                    <Label row="1" text="Con pagos seguros y profesionales reseñados entre los cuales elegir, BeeEmpleos es la forma más simple y segura de encargar empleo en línea." textWrap="true" class="h2 pl black" ios:paddingBottom="180" verticalAlignment="bottom"/>
+                </GridLayout>
+            </TabContentItem>
+        </Tabs> 
+        <GridLayout row="1" rows="auto,*" columns="*,auto,*" visibility="{{selected==3?'collapsed':'visible'}}" verticalAlignment="bottom" zIndex="1">
+            <Image row="0" colSpan="3" src="~/images/logo_80.png" stretch="fit" class="center"/>
+            <Label row="1" col="0" text="Atrás" tap="tapBack" class="h2 black bold center pm" visibility="{{selected==0?'collapsed':'visible'}}"/>
+            <StackLayout row="1" col="1" orientation="horizontal" class="center" verticalAlignment="middle">
+                <Label text=" ● " class="{{selected==0?'h4 black':'h4 silver'}}"/>
+                <Label text=" ● " class="{{selected==1?'h4 black':'h4 silver'}}"/>
+                <Label text=" ● " class="{{selected==2?'h4 black':'h4 silver'}}"/>
+                <Label text=" ● " class="{{selected==3?'h4 black':'h4 silver'}}"/>
+            </StackLayout> 
+            <Label row="1" col="2" text="Siguiente" tap="tapNext" class="h2 black bold center pm" zIndex="2"/>
+        </GridLayout>
+        <Button row="1" id="btn" text="Empezar" tap="tapLogin" ios:padding="10" class="h2 bg_primary_gradient white border_m border_primary bold circle" visibility="{{selected==3?'visible':'collapsed'}}" verticalAlignment="bottom" marginBottom="20"/>
+    </GridLayout>
+</Page>

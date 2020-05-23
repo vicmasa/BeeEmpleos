@@ -1,0 +1,32 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    id="register_page"
+    actionBarHidden="true" 
+    navigatingTo="onNavigatingTo"
+    xmlns:card="components/custom/card"
+    xmlns:bottomNavigation="components/custom/bottomNavigation">
+    <GridLayout> 
+        <ScrollView>
+            <StackLayout class="center pl">
+                
+                <StackLayout class="pm" />
+                <Label text="Regítrate con" class="h3 dark_silver center" />
+
+                <Image src="~/images/fb.png" width="50%"/>
+                
+                <StackLayout class="pl" />
+                <StackLayout class="border_s round_s bg_grey pm" tap="tapNav">
+                    <Label text="Quiero registrar mi CV" class="h2 black extra_bold pm"/>
+                    <Image src="~/images/logo_512.png" height="300px"/>
+                </StackLayout>
+
+                <StackLayout class="pl" />
+                <StackLayout class="border_s round_s bg_grey pm" tap="tapNav">
+                    <Label text="Quiero ofrecer empleo" class="h2 black extra_bold pm"/>
+                    <Image src="~/images/hive_512.png" height="300px"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+        <bottomNavigation:basic/>
+    </GridLayout>
+</Page> 

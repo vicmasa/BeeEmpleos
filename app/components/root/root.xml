@@ -1,0 +1,37 @@
+<BottomNavigation selectedIndexChanged="selectedIndexChanged">
+    <TabStrip id="tabStripBottom">
+        <TabStripItem class="tab">
+            <Label text="Empleos"/>
+            <Image src="font://&#xf121;" class="icon" />
+        </TabStripItem>
+        <TabStripItem class="tab">
+            <Label text="Freelance"/>
+            <Image src="font://&#xf1e3;" class="icon" />
+        </TabStripItem>
+        <!-- <TabStripItem class="tab">
+            <Label text="Postulaciones" />
+            <Image src="font://&#xf105;" class="icon" />
+        </TabStripItem>
+        <TabStripItem class="tab">
+            <Label text="Perfil" />
+            <Image src="font://&#xf25b;" class="icon" />
+        </TabStripItem> -->
+    </TabStrip>
+
+    <TabContentItem>
+        <Frame defaultPage="~/components/jobs/jobs" />
+    </TabContentItem>  
+
+    <TabContentItem>
+        <Frame defaultPage="~/components/freelance/freelance" />
+    </TabContentItem>
+    
+    <!-- <TabContentItem>
+        <Frame defaultPage="browse/browse-page" />
+    </TabContentItem>
+
+    <TabContentItem>
+        <Frame defaultPage="register/register-page" />
+    </TabContentItem> -->
+
+</BottomNavigation>

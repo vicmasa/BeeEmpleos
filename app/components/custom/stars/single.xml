@@ -1,0 +1,12 @@
+<Repeater items="{{stars}}">
+    <Repeater.itemsLayout>
+        <StackLayout orientation="horizontal"/>
+    </Repeater.itemsLayout>
+    <Repeater.itemTemplate>
+        <Label col="1" text=" &#xf238;" class="icon"/>
+    </Repeater.itemTemplate>
+</Repeater>
+<!-- <GridLayout>
+            <Label text="&#xf238;&#xf238;&#xf238;&#xf238;&#xf238;" class="h3 silver icon"/>
+            <Label text="&#xf238;&#xf238;&#xf238;&#xf238;" class="h3 yellow icon"/>
+        </GridLayout> -->

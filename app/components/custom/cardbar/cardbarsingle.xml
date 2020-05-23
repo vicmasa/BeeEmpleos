@@ -1,0 +1,6 @@
+<GridLayout>
+    <GridLayout height="16" class="bg_grey"/>
+    <GridLayout height="16" width="{{bar_value_perc}}" class="{{'bg_'+color+' left'}}" visibility="{{bar_value>0?'visible':'collapsed'}}"/>
+    <label text="{{bar_value_perc}}" class="h4 white left pm_l" verticalAlignment="middle"/>
+    <label text="{{bar_value}}" class="h4 silver right pm_r" verticalAlignment="middle"/>
+</GridLayout>

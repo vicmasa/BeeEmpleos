@@ -1,0 +1,21 @@
+<GridLayout columns="20,auto,20,*,20" xmlns:cardbar="components/custom/cardbar">
+    <StackLayout col="1">
+        <Label text="4,1" class="h0 dark_silver center"/>
+        <GridLayout class="pm_b">
+            <Label text="&#xf238;&#xf238;&#xf238;&#xf238;&#xf238;" class="h3 silver icon"/>
+            <Label text="&#xf238;&#xf238;&#xf238;&#xf238;" class="h3 yellow icon"/>
+        </GridLayout>
+        <Label text="23.213 en total" class="h4 dark_silver center"/>
+    </StackLayout>
+    <Repeater col="3" items="{{reviews}}">
+        <Repeater.itemsLayout>
+            <StackLayout/>
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+            <GridLayout columns="auto,*">
+                <Label col="0" text="{{name}}" padding="1" class="h4 dark_silver"/>
+                <cardbar:cardbarsingle col="1" padding="1"/>
+            </GridLayout>
+        </Repeater.itemTemplate>
+    </Repeater>
+</GridLayout>

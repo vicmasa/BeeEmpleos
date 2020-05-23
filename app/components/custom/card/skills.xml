@@ -1,0 +1,8 @@
+<Repeater items="{{skills}}">
+    <Repeater.itemsLayout>
+        <WrapLayout orientation="horizontal" padding="15"/>
+    </Repeater.itemsLayout>
+    <Repeater.itemTemplate>
+        <Label text="{{$value}}" class="dark_silver round_s bg_dark_grey" margin="5" padding="5"/>
+    </Repeater.itemTemplate>
+</Repeater>

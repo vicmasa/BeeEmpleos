@@ -1,0 +1,7 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd"
+    id="login_page"
+    loaded="loaded">
+    <StackLayout>
+        <Button text="LOGIN" tap="goTo" class="h1 black"/>
+    </StackLayout>
+</Page>

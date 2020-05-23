@@ -1,0 +1,9 @@
+<GridLayout columns="auto,20,*" class="pm">
+    <Image col="0" src="{{'~/images/avatar/'+$index+'.png'}}" verticalAlignment="middle" height="60" width="60" class="circle round_s bg_grey" stretch="aspectFill"/>
+    <GridLayout col="2" rows="auto,auto,auto" columns="*,auto" verticalAlignment="middle">
+        <Label col="0" text="{{name+' '+lastname}}" class="h3 black pm_r bold"/>
+        <Label col="1" text="8:24 pm." class="h4 pm_l_r right dark_silver"/>
+        <Label row="1" text="{{advertieser}}" class="h4 silver"/>
+        <Label row="2" colSpan="2" text="Muy bien, te espero 👍 no olvides las proformas. Saludos" class="h4 dark_silver"/>
+    </GridLayout>
+</GridLayout>

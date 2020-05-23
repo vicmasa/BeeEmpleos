@@ -1,0 +1,13 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd"
+    id="home_page"
+    loaded="loaded"
+	actionBarHidden="true"
+    class="bg_primary">
+    <StackLayout verticalAlignment="middle">
+        <Image src="~/images/splash.png" class="center"/>
+        <Label text="BeeEmpleos" class="h1 black extra_bold center"/>
+        <Button text="HOME" tap="goTo" />
+        <Button text="ROOT" tap="goToRoot" />
+        <Button text="JOBS" tap="goToJobs" />
+    </StackLayout>
+</Page>

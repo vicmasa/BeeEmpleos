@@ -1,0 +1,11 @@
+<StackLayout class="pl" xmlns:stars="components/custom/stars">
+    <GridLayout columns="*,auto">
+        <Label col="0" text="{{name+' '+lastname}}" class="h1 black extra_bold"/>
+        <Image col="1" src="~/images/logo_80.png" stretch="aspectFit" height="50"/>
+    </GridLayout>
+    <GridLayout columns="*,auto">
+        <Label col="0" text="{{job}}" class="h2 dark_silver"/>
+        <stars:single col="1"/>
+    </GridLayout>
+    <Label text="{{description}}" textWrap="true" class="pl_t dark_silver"/>
+</StackLayout>

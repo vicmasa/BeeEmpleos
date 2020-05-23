@@ -1,0 +1,45 @@
+/*COLORS*/
+$red: #e2445c !default;
+$green: #00c875 !default;
+$yellow: #ffcb00 !default;
+$black: black !default;
+$dark_silver: #666666 !default;
+$silver: #c0c0c0 !default;
+$dark_grey: #e9e8ec !default;
+$grey: #f5f5f6 !default;
+$white: white !default;
+$primary: #fec400 !default;
+// $primary_gradient: linear-gradient(to bottom, rgba($primary, 0.6) 0%, rgba($primary, 1) 100%) !default;
+$primary_gradient: linear-gradient(to bottom, rgba($primary, 1) 0%, rgba(#e89f00, 1) 100%) !default;
+$blur: rgba($white, 0.5) !default;
+$disabled: rgba($black, 0.4) !default;
+//CUSTOM COLORS
+$dark_purple: #320251 !default; //#320251 //#471495;
+$purple: #471495 !default;
+$purple_gradient: linear-gradient(to bottom, rgba(#3f3177, 1) 0%, rgba(#1c1635, 1) 100%) !default;
+/*SIZE FONTS*/
+$h0: 40;
+$h1: 28;
+$h2: 22;
+$h3: 18;
+$h4: 14;
+$h5: 10;
+/*SIZES PADDING MARGIN*/
+$space_s: 5;
+$space_m: 10;
+$space_l: 20;
+/*BORDER RADIUS*/
+$radius_s: 5;
+$radius_m: 10;
+$radius_l: 20;
+/*BORDER WIDTH*/
+$width_s: 0.5;
+$width_m: 1;
+$width_l: 2;
+$width_xl: 4;
+/*FONTS FAMILY*/
+$font_extra_bold: "Assistant-ExtraBold", "Assistant ExtraBold";
+$font_bold: "Assistant-Bold", "Assistant Bold";
+$font_semi_bold: "Assistant-SemiBold", "Assistant SemiBold";
+$font_icon: "Flaticon";
+$font_icon_nb: "icomoon";

@@ -1,0 +1,14 @@
+<StackLayout class="pl">
+    <Label text="{{requirementsTitle}}" class="h3 black bold pm_t_b"/>
+    <Repeater items="{{ requirements }}">
+        <Repeater.itemsLayout>
+            <StackLayout/>
+        </Repeater.itemsLayout>
+        <Repeater.itemTemplate>
+            <StackLayout orientation="horizontal">
+                <Label text="{{ key+': ' }}" class="h4 black bold"/>
+                <Label text="{{ value }}" class="h4 black"/>
+            </StackLayout>
+        </Repeater.itemTemplate>
+    </Repeater>
+</StackLayout>

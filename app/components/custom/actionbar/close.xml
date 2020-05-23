@@ -1,0 +1,4 @@
+<ActionBar id="actionBar" class="h1 extra_bold black" flat="true" title="">
+    <NavigationButton visibility="collapsed"/>
+    <ActionItem tap="tapBack" ios.position="right" icon="font://&#xf1ca;" ios:class="icon" android:class="h5 icon" />
+</ActionBar>

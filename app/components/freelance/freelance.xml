@@ -1,0 +1,15 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd"
+    loaded="loaded"
+    xmlns:card="components/custom/card"
+    xmlns:actionbar="components/custom/actionbar"
+    xmlns:bottomNavigation="components/custom/bottomNavigation">
+    <actionbar:search/>
+    <GridLayout rows="*,auto">
+        <ListView items="{{ items }}" itemTap="onItemTap">
+            <ListView.itemTemplate>
+                <card:avatar/> 
+            </ListView.itemTemplate>
+        </ListView>
+        <bottomNavigation:basic/>
+    </GridLayout>
+</Page>

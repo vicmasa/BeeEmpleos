@@ -1,0 +1,10 @@
+<GridLayout id="navigationBottom" row="1" columns="*,*,*,*" verticalAlignment="bottom" backgroundColor="white">
+    <Button col="0" id="nbButton0" text="&#xf106;" class="h1 icon_nb" padding="0 0 15 0" nav="jobs/jobs" tap="tapItem"/>
+    <Label col="0" id="nbLabel0" text="Empleos" class="h5 center" verticalAlignment="bottom" paddingBottom="0"/>
+    <Button col="1" id="nbButton1" text="&#xf102;" class="h1 icon_nb" padding="0 0 15 0" nav="freelance/freelance" tap="tapItem"/>
+    <Label col="1" id="nbLabel1" text="Freelance" class="h5 center" verticalAlignment="bottom" paddingBottom="0"/>
+    <Button col="2" id="nbButton2" text="&#xf104;" class="h1 icon_nb" padding="0 0 15 0" nav="alerts/alerts" tap="tapItem"/>
+    <Label col="2" id="nbLabel2" text="Alertas" class="h5 center" verticalAlignment="bottom" paddingBottom="0"/>
+    <Button col="3" id="nbButton3" text="&#xf100;" class="h1 icon_nb" padding="0 0 15 0" nav="register/register" tap="tapItem"/>
+    <Label col="3" id="nbLabel3" text="Perfil" class="h5 center" verticalAlignment="bottom" paddingBottom="0"/>
+</GridLayout>

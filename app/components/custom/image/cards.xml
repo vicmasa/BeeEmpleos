@@ -1,0 +1,10 @@
+<Repeater items="{{images}}">
+    <Repeater.itemsLayout>
+        <WrapLayout orientation="horizontal"/>
+    </Repeater.itemsLayout>
+    <Repeater.itemTemplate>
+        <StackLayout class="pl" width="50%">
+            <Image src="{{$value}}" borderRadius="20"/>
+        </StackLayout>
+    </Repeater.itemTemplate> 
+</Repeater>

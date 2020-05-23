@@ -1,0 +1,13 @@
+<StackLayout xmlns:stars="components/custom/stars">
+    <GridLayout columns="*,auto,auto">
+        <Label col="0" text="{{status}}" class="h2 dark_silver pl_l"/>
+        <Label col="1" tap="tapHeart" text="&#xf1a5;" class="h2 icon black pl"/>
+        <Label col="2" tap="tapShared" text="&#xf21a;" class="h2 icon black pl"/>
+    </GridLayout>
+    <Label text="{{quantity+' '+name}}" class="h1 black extra_bold pl_l_r"/>
+    <GridLayout columns="*,auto" class="pl_l_r">
+        <Label col="0" text="{{currency+' '+salary}}" class="h4 black"/>
+        <Label col="1" text="{{tags}}" class="h3 bold pm_l_r bg_red white circle right" visibility="{{tags?'visible':'collapsed'}}"/>
+    </GridLayout>
+    <Label text="{{advertieser}}" class="h2 dark_silver pl_l_r"/>
+</StackLayout>

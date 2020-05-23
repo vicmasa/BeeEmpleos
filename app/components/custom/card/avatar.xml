@@ -1,0 +1,14 @@
+<GridLayout rows="auto,25,auto,25" columns="auto,20,*" class="pm">
+    <Image rowSpan="4" col="0" src="{{imgUrl}}" verticalAlignment="middle" height="60" width="60" class="circle round_s bg_grey" stretch="aspectFill"/>
+    <GridLayout row="0" col="2" columns="*,auto">
+        <Label col="0" text="{{name+' '+lastname}}" class="h3 black pm_r bold"/>
+        <Label col="1" text="&#xf238; &#xf238; &#xf238; &#xf238;" class="icon pm_l_r right primary"/>
+    </GridLayout> 
+    <Label row="1" col="2" text="{{job}}" class="h4 dark_silver"/>
+    <Label row="2" col="2" text="{{'Experiencia: '+experience}}" class="h4 black"/>
+    <Image rowSpan="2" col="2" row="1" src="~/images/logo_512.png" width="30" stretch="aspectFill" class="right"/>
+    <GridLayout row="3" col="2" columns="*,*">
+        <Label col="0" text="{{location}}" class="h4 left dark_silver" verticalAlignment="middle"/>
+        <Label col="1" text="{{'&#xf1f3; '+distance}}" class="icon h4 right dark_silver" verticalAlignment="middle"/>
+    </GridLayout> 
+</GridLayout>

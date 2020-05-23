@@ -1,0 +1,29 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    loaded="loaded"
+    actionBarHidden="true"
+    xmlns:image="components/custom/image"
+    xmlns:card="components/custom/card"
+    xmlns:cardbar="components/custom/cardbar"
+    xmlns:profile="components/custom/profile"
+    xmlns:buttonBottom="components/custom/buttonBottom">
+    <GridLayout rows="auto,*,auto" android:paddingTop="21">
+        <ScrollView row="1">
+            <StackLayout>
+                <image:single/>
+                <profile:single/>
+                <card:skills/>
+                <GridLayout columns="*,auto" class="pl_l_r">
+                    <Label col="0" text="Reseñas" class="h3 bold black" verticalAlignment="middle"/>
+                    <Label col="1" text="Ver reseñas" class="h4 red pl_t_b" tap="tapGoToReviews"/>
+                </GridLayout> 
+                <cardbar:cardbarreview/>
+                <GridLayout columns="*,auto" class="pl_l_r" marginTop="20">
+                    <Label col="0" text="Portfolios (5)" class="h3 bold black" verticalAlignment="middle"/>
+                    <Label col="1" text="Ver portforlios" class="h4 red pl_t_b" tap="tapGoToGalery"/>
+                </GridLayout>
+                <image:cards/>
+            </StackLayout>
+        </ScrollView> 
+        <buttonBottom:single row="2"/>
+    </GridLayout>
+</Page>

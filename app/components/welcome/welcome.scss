@@ -1,0 +1,45 @@
+#bg_0 {
+  padding-top: 50;
+  background-image: url('~/images/welcome/0.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#bg_1 {
+  padding-top: 50;
+  background-image: url('~/images/welcome/1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#bg_2 {
+  padding-top: 50;
+  background-image: url('~/images/welcome/2.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+#bg_3 {
+  padding-top: 50;
+  background-image: url('~/images/welcome/3.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+.fadeInUp {
+  animation-name: fadeInUp;
+  animation-duration: 1;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.fadeInDown {
+  animation-name: fadeInDown;
+  animation-duration: 1;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+}
+.EncodeSansSemiCondensed-ExtraLight {
+  font-family: "EncodeSansSemiCondensed-ExtraLight", "Encode Sans Semi Expanded ExLight";
+}

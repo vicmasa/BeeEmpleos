@@ -1,0 +1,6 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd"
+    loaded="loaded"
+	actionBarHidden="true"
+    class="bg_primary">
+    <Image src="~/images/splash.png"/>
+</Page>

@@ -1,0 +1,16 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd"
+    id="jobs_page"
+    navigatedTo="loaded"
+    xmlns:card="components/custom/card"
+    xmlns:actionbar="components/custom/actionbar"
+    xmlns:bottomNavigation="components/custom/bottomNavigation">
+    <actionbar:search context="{{items}}"/>
+    <GridLayout rows="*,auto">
+        <ListView items="{{ items }}" itemTap="onItemTap">
+            <ListView.itemTemplate>
+                <card:single/>
+            </ListView.itemTemplate>
+        </ListView>
+        <bottomNavigation:basic/>
+    </GridLayout>
+</Page>

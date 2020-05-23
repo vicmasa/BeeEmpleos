@@ -1,0 +1,15 @@
+#navigationBottom {
+  border-top-color: #c9c9c9;
+  border-top-width: 0.5;
+}
+#navigationBottom button,
+#navigationBottom label {
+  color: silver;
+  border-width: 0;
+  z-index: 0;
+}
+#navigationBottom button:active,
+#navigationBottom label:active {
+  color: black;
+  background-color: #f1f1f1;
+}

@@ -1,0 +1,6 @@
+<GridLayout columns="auto,*,auto,auto">
+    <Label col="0" tap="tapBack" text="&#xf1ca;" class="h2 icon black pl"/>
+    <Image col="1" colSpan="2" src="~/images/logo_80.png" stretch="aspectFit" height="50"/>
+    <Label col="2" tap="tapHeart" text="&#xf1a5;" class="h2 icon black pl"/>
+    <Label col="3" tap="tapShared" text="&#xf21a;" class="h2 icon black pl"/>
+</GridLayout>

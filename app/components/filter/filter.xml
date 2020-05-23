@@ -1,0 +1,59 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    navigatingTo="onNavigatingTo"  
+    xmlns:card="components/custom/card"
+    xmlns:actionbar="components/custom/actionbar"
+    xmlns:bottomNavigation="components/custom/bottomNavigation">
+    <actionbar:search/>
+    <GridLayout rows="*,auto">
+        <Tabs> 
+            <TabStrip class="icon" textTransform="none">
+                <TabStripItem>
+                    <Label text="Mis empleos"/>
+                </TabStripItem>
+                <TabStripItem>
+                    <Label text="Mis freelancers"/>
+                </TabStripItem>
+                <TabStripItem>
+                    <Label text="Mis alertas"/>
+                </TabStripItem>
+            </TabStrip>
+            <TabContentItem>
+                <ListView id="listView_r0" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'">
+                    <ListView.itemTemplates>
+                        <template key="title">
+                            <Label text="15 empleos postulados" class="h1 black extra_bold pl"/>
+                        </template>
+                        <template key="body">
+                            <card:single/>
+                        </template>
+                    </ListView.itemTemplates>
+                </ListView>
+            </TabContentItem>
+            <TabContentItem>
+                <ListView id="listView_r0" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'">
+                    <ListView.itemTemplates>
+                        <template key="title">
+                            <Label text="8 freelancers contactados" class="h1 black extra_bold pl"/>
+                        </template>
+                        <template key="body">
+                            <card:comment/>
+                        </template>
+                    </ListView.itemTemplates>
+                </ListView>
+            </TabContentItem>
+            <TabContentItem>
+                <ListView id="listView_r0" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'">
+                    <ListView.itemTemplates>
+                        <template key="title">
+                            <Label text="3 alertas creadas" class="h1 black extra_bold pl"/>
+                        </template>
+                        <template key="body">
+                            <card:single/>
+                        </template>
+                    </ListView.itemTemplates>
+                </ListView>
+            </TabContentItem>
+        </Tabs>
+        <bottomNavigation:basic/>
+    </GridLayout>
+</Page>

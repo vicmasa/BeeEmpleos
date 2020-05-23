@@ -1,0 +1,31 @@
+<StackLayout class="pl"> 
+    <Label text="{{descriptionTitle}}" class="h3 black bold pm_t_b"/>
+    <Label class="h4 black" textWrap="true" text="Somos una empresa del sector industrial que se encuentra en la búsqueda de personal para cubrir el puesto de: PORTERO-VIGILANTE . Deberá ser una persona proactiva, con facilidad de palabra e interacción con las personas a diferente nivel,honrado, responsable y con adaptabilidad al cambio.
+
+        FUNCIONES PRINCIPALES:
+        -Control de ingreso y salida de personal administrativo y operativo (revisión).
+        -Reporte de incidencias.
+        -Registro e identificación de ingreso y salida de visitantes (proveedores, clientes, postulantes,etc).
+        -Control de ingreso y salida de materiales y maquinarias (REVISIÓN DE GUÍAS)
+        -Entre OTRAS funciones que se le asigne.
+
+        REQUISITOS:
+        -Educación mínima: secundaria (INDISPENSABLE contar con certificado de estudios).
+        -Mínimo 1 año de experiencia en puestos similares (experiencia comprobable).
+        -De preferencia con certificación de cursos o seminarios sobre seguridad y vigilancia.
+        -Deseable haber realizado servicio militar.
+        -Contar con DNI VIGENTE.
+        -Residir en zonas aledañas: LA COLONIAL, BREÑA,PUEBLO LIBRE, BELLAVISTA
+
+        OFRECEMOS:
+        -Ingreso directo a planilla con todos los beneficios de ley (Asignación familiar, vacaciones, etc.)
+        -Participe de UTILIDADES.
+        -PAGO DE HORAS EXTRAS.
+        -HORARIO FIJO.
+
+        LAS PERSONAS INTERESADAS ACERCARSE A: JR. TARAPOTO 1157 - BREÑA (REFERENCIA:CRUCE DE LA AV. VENEZUELA C/ AV. TINGO MARIA).
+
+
+        Fecha de contratación: 29/11/2019
+        Cantidad de vacantes: 4" />
+</StackLayout>
