@@ -17,6 +17,10 @@ exports.tapBack = function () {
 }
 function setInit(item) {
     loadSearch();
+    setScrollers();
+}
+function setScrollers(){
+    ViewModel.set('repeater_select', ['Gerente de operaciones', 'Supervisor', 'Fiscalizador', 'Superintendente de IT']);
 }
 exports.tapButton = function (args) {
     const btn = args.object;

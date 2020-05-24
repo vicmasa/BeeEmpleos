@@ -2,11 +2,11 @@
     <Image rowSpan="4" col="0" src="{{imgUrl}}" verticalAlignment="middle" height="80" width="60" class="round_s bg_grey" stretch="aspectFill"/>
     <GridLayout row="0" col="2" columns="*,auto">
         <Label col="0" text="{{quantity+' '+name}}" class="h3 black pm_r bold"/>
-        <Label col="1" text="{{tags}}" class="h3 bold pm_l_r bg_red white circle right" visibility="{{tags?'visible':'collapsed'}}"/>
+        <Label col="1" text="{{tags}}" class="h3 pm_l_r bg_red white circle right" visibility="{{tags?'visible':'collapsed'}}"/>
     </GridLayout>
     <Label row="1" col="2" text="{{advertieser}}" class="h4 dark_silver"/>
     <Label row="2" col="2" text="{{currency+' '+salary}}" class="h4 black"/>
-    <GridLayout row="3" col="2" columns="*,*">
+    <GridLayout row="3" col="2" columns="*,*"> 
         <Label col="0" text="{{location}}" class="h4 left dark_silver" verticalAlignment="middle"/>
         <Label col="1" text="{{createdAt}}" class="h4 right dark_silver" verticalAlignment="middle"/>
     </GridLayout> 

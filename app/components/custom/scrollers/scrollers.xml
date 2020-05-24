@@ -1,0 +1,10 @@
+<ScrollView orientation="horizontal"  scrollBarIndicatorVisible="false">
+    <Repeater id="repeater_select" items="{{repeater_select}}">
+        <Repeater.itemsLayout>
+            <StackLayout orientation="horizontal"/>
+        </Repeater.itemsLayout> 
+        <Repeater.itemTemplate> 
+            <Button text="{{$value}}" class="dark_silver bg_dark_grey pm" borderRadius="50" marginRight="10"/>
+        </Repeater.itemTemplate>
+    </Repeater>
+</ScrollView>

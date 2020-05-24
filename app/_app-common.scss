@@ -34,6 +34,12 @@ actionBar {
   font-family: $font_semi_bold;
   font-weight: 600;
 }
+.regular {
+  font-family: $font_regular;
+}
+.thin { 
+  font-family: $font_thin;
+}
 .icon {
   font-family: $font_icon;
   vertical-align: middle;
@@ -264,6 +270,10 @@ actionBar {
 button {
   border-radius: $radius_s;
   text-transform: none;
+}
+button:active {
+  background-color: #fec400;
+  color: black;
 }
 .round_s {
   border-radius: $radius_s;
