@@ -1,9 +1,8 @@
-<ActionBar id="actionBar" class="h2 black" loaded="loaded">
+<ActionBar id="actionBar" class="h2 black" loaded="loaded" flat="true">
     <NavigationButton visibility="collapsed"/>
     <StackLayout orientation="horizontal" horizontalAlignment="left">
         <Image src="~/images/logo_80.png" verticalAlignment="center" height="40"/>
         <Label text=" BeeEmpleos" class="h1 extra_bold black"></Label>
     </StackLayout>
-    <ActionItem tap="tapFilter" ios.position="right" icon="font://&#xf1a5;" ios:class="icon" android:class="h5 icon" />
     <ActionItem tap="tapFilter" ios.position="right" icon="font://&#xf208;" ios:class="icon " android:class="h5 icon" /> 
 </ActionBar>

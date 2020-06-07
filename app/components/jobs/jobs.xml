@@ -6,9 +6,14 @@
     xmlns:bottomNavigation="components/custom/bottomNavigation">
     <actionbar:search context="{{items}}"/>
     <GridLayout rows="*,auto">
-        <ListView items="{{ items }}" itemTap="onItemTap">
+        <ListView items="{{ items }}" itemTap="onItemTap" separatorColor="transparent" class="bg_grey">
             <ListView.itemTemplate>
-                <card:single/>
+                <!-- <GridLayout padding="0 10 0 10">
+                    <card:single androidElevation="5" margin="10"/>
+                </GridLayout> -->
+                <GridLayout padding="0 10 0 10">
+                    <card:single margin="10"/>
+                </GridLayout>
             </ListView.itemTemplate>
         </ListView>
         <bottomNavigation:basic/>

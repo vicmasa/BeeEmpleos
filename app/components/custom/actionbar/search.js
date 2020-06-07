@@ -7,4 +7,4 @@ exports.loaded = function (args) {
 exports.tapFilter = function (args) {
     const item = page.bindingContext;
     nav.goTo(page.page, 'search/search', 'slideBottom', false, item);
-} 
+}

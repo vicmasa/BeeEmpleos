@@ -7,8 +7,8 @@
     xmlns:profile="components/custom/profile"
     xmlns:buttonBottom="components/custom/buttonBottom">
 
-    <GridLayout rows="auto,*,auto" android:paddingTop="21">
-        <ScrollView row="1">
+    <GridLayout rows="*,auto" android:paddingTop="21">
+        <ScrollView row="0">
             <StackLayout>
                 <image:single/>
                 <profile:hive/>
@@ -16,7 +16,7 @@
                 <details:description/>
             </StackLayout>
         </ScrollView>
-        <buttonBottom:single row="2"/>
+        <buttonBottom:single row="1"/>
     </GridLayout>
 
 </Page>

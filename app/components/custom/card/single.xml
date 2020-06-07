@@ -1,4 +1,47 @@
-<GridLayout rows="auto,25,auto,25" columns="auto,20,*" class="{{type==0?'pm':'pm bg_yellow'}}">
+<GridLayout rows="auto,25,auto,25,auto" columns="*,20,auto" class="pm round_m bg_white border_dark_grey border_s">
+    
+    <Label row="0" col="0" text="{{name}}" class="h3 black bold" ios:textWrap="true" />
+    <Label row="1" col="0" text="{{advertieser}}" class="h4 dark_silver" ios:textWrap="true" />
+    
+    <Label row="2" col="0" text="Enviado" class="h4 left green border_green border_s round_s" padding="2 5 2 5" />
+
+    <StackLayout row="3" orientation="horizontal">
+        <Label text="{{location}}" class="h4 silver"/>
+        <Label text="{{createdAt}}" class="pm_l h4 silver"/>
+    </StackLayout>
+
+    <Image rowSpan="4" col="2" src="{{imgUrl}}" verticalAlignment="middle" height="80" width="60" class="round_s bg_grey" stretch="aspectFill"/>
+    
+</GridLayout>
+
+<!-- <GridLayout rows="auto,15,auto,5,auto" columns="auto,10,*" android:class="{{type==0?'pm bg_white':'pm bg_yellow'}}" ios:bg_color="{{type==0?'white':'yellow'}}" ios:class="pm" android:borderRadius="15" ios:loaded="cardLoaded">
+    <Image col="0" src="{{imgUrl}}" verticalAlignment="top" height="40" width="30" stretch="aspectFit"/>
+    <StackLayout row="0" col="2">
+        <Label text="{{name}}" class="h2 black bold"/>
+        <Label text="{{advertieser}}" class="h3 semi_bold dark_silver" paddingTop="5"/>
+    </StackLayout>
+    
+    <Label row="2" col="0" text="&#xf1f3;" class="icon h3 dark_silver right"/>
+    <Label row="2" col="2" text="{{location}}" class="h4 dark_silver"/>
+    <Label row="4" col="0" text="&#xf161;" class="icon h3 dark_silver right"/>
+    <Label row="4" col="2" text="{{skills}}" class="h4 dark_silver"/>
+</GridLayout> -->
+
+<!-- <GridLayout rows="auto,25,auto,25" columns="*,20,auto" class="pm">
+    <Label row="0" col="0" text="{{name}}" class="h3 black bold"/>
+    <Label row="1" col="0" text="{{advertieser}}" class="h4 dark_silver"/>
+    <Label row="2" col="0" text="{{currency+' '+salary}}" class="h4 black"/>
+    <GridLayout row="3" col="0" columns="*,*"> 
+        <Label col="0" text="{{location}}" class="h4 left dark_silver" verticalAlignment="middle"/>
+        <Label col="1" text="{{createdAt}}" class="h4 right dark_silver" verticalAlignment="middle"/>
+    </GridLayout>
+    <StackLayout rowSpan="4" col="2">
+        <Image src="{{imgUrl}}" verticalAlignment="middle" height="80" width="60" class="round_s bg_grey" stretch="aspectFill"/>
+        <Label col="1" text="{{tags}}" class="h4 center green border_green border_s round_s" visibility="{{tags?'visible':'collapsed'}}" padding="2" marginTop="5"/>
+    </StackLayout>
+</GridLayout> -->
+
+<!-- <GridLayout rows="auto,25,auto,25" columns="auto,20,*" class="pm">
     <Image rowSpan="4" col="0" src="{{imgUrl}}" verticalAlignment="middle" height="80" width="60" class="round_s bg_grey" stretch="aspectFill"/>
     <GridLayout row="0" col="2" columns="*,auto">
         <Label col="0" text="{{quantity+' '+name}}" class="h3 black pm_r bold"/>
@@ -10,4 +53,4 @@
         <Label col="0" text="{{location}}" class="h4 left dark_silver" verticalAlignment="middle"/>
         <Label col="1" text="{{createdAt}}" class="h4 right dark_silver" verticalAlignment="middle"/>
     </GridLayout> 
-</GridLayout>
+</GridLayout> -->

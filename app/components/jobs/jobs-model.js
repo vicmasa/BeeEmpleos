@@ -20,7 +20,9 @@ function HomeItemsViewModel() {
                 currency: "S/",
                 salary: "5500",
                 createdAt: "Hace 2 min",
-                tags: "Urgente",
+                tags: "Enviado",
+                cv: "Enviado",
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 1
             },
             {
@@ -34,6 +36,7 @@ function HomeItemsViewModel() {
                 salary: "3500",
                 createdAt: "Hace 40 min",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 1
             },
             {
@@ -46,7 +49,9 @@ function HomeItemsViewModel() {
                 currency: "S/",
                 salary: "2500",
                 createdAt: "Hace 3 horas",
-                tags: "Urgente",
+                tags: "Enviado",
+                cv: "Enviado",
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 1
             },
             {
@@ -60,6 +65,7 @@ function HomeItemsViewModel() {
                 salary: "a tratar",
                 createdAt: "Hace 1 día",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 1
             },
             {
@@ -73,6 +79,7 @@ function HomeItemsViewModel() {
                 salary: "a tratar",
                 createdAt: "Hace 2 min",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -86,6 +93,7 @@ function HomeItemsViewModel() {
                 salary: "6000",
                 createdAt: "Hace 35 min",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -99,6 +107,7 @@ function HomeItemsViewModel() {
                 salary: "5500",
                 createdAt: "Hace 4 horas",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -111,7 +120,9 @@ function HomeItemsViewModel() {
                 currency: "Salario",
                 salary: "a tratar",
                 createdAt: "Hace 6 horas",
-                tags: "Urgente",
+                tags: "Enviado",
+                cv: "Enviado",
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -125,6 +136,7 @@ function HomeItemsViewModel() {
                 salary: "2500",
                 createdAt: "Hace 6 horas",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -138,6 +150,7 @@ function HomeItemsViewModel() {
                 salary: "3500",
                 createdAt: "Hace 8 horas",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -151,6 +164,7 @@ function HomeItemsViewModel() {
                 salary: "4500",
                 createdAt: "Hace 1 día",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -164,6 +178,7 @@ function HomeItemsViewModel() {
                 salary: "1500",
                 createdAt: "Hace 1 día",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -176,7 +191,9 @@ function HomeItemsViewModel() {
                 currency: "S/",
                 salary: "2500",
                 createdAt: "Hace 2 días",
-                tags: "Urgente",
+                tags: "Enviado",
+                cv: "Enviado",
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -190,6 +207,7 @@ function HomeItemsViewModel() {
                 salary: "a tratar",
                 createdAt: "Hace 2 días",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -203,6 +221,7 @@ function HomeItemsViewModel() {
                 salary: "4500",
                 createdAt: "Hace 2 días",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             },
             {
@@ -216,6 +235,7 @@ function HomeItemsViewModel() {
                 salary: "7500",
                 createdAt: "Hace 3 días",
                 tags: undefined,
+                skills: ["Excel avanzado", "MS Team", "Zoom"],
                 type: 0
             }
         ]

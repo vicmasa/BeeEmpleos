@@ -1,0 +1,22 @@
+<Page
+    loaded="loaded"
+    actionBarHidden="true"
+    xmlns="http://schemas.nativescript.org/tns.xsd"
+    xmlns:image="components/custom/image"
+    xmlns:details="components/custom/details"
+    xmlns:profile="components/custom/profile"
+    xmlns:buttonBottom="components/custom/buttonBottom">
+
+    <GridLayout rows="auto,*,auto" android:paddingTop="21">
+        <ScrollView row="1">
+            <StackLayout>
+                <image:single/>
+                <profile:hive/>
+                <details:requirements/>
+                <details:description/>
+            </StackLayout>
+        </ScrollView>
+        <buttonBottom:single row="2"/>
+    </GridLayout>
+
+</Page>

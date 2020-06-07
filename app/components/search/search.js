@@ -3,7 +3,6 @@ const enums = require("ui/enums");
 const ViewModel = require('./search-model');
 
 const ls = require('~/common/ls');
-const nav = require('~/common/nav');
 
 let page;
 exports.onNavigatingTo = function (args) {
@@ -11,9 +10,6 @@ exports.onNavigatingTo = function (args) {
     const item = page.navigationContext;
     setInit(item);
     page.bindingContext = ViewModel;
-}
-exports.tapBack = function () {
-    nav.goBack(page.page);
 }
 function setInit(item) {
     loadSearch();

@@ -1,0 +1,24 @@
+<GridLayout rows="auto,25,auto,25,auto" columns="*,20,auto" class="pm round_m bg_white border_dark_grey border_s">
+    
+    <Label row="0" col="0" text="{{name}}" class="h3 black bold" ios:textWrap="true" />
+    <Label row="1" col="0" text="{{advertieser}}" class="h4 dark_silver" ios:textWrap="true" />
+    
+    <StackLayout row="2" col="0" orientation="horizontal">
+        <Label text="&#xf245;" class="{{'h3 icon '+(status==0?'green':'silver')}}"/>
+        <Label text="&#xf243;" class="h3 icon silver"/>
+        <Label text="&#xf245;" class="{{'h3 icon '+(status==1?'green':'silver')}}"/>
+        <Label text="&#xf243;" class="h3 icon silver"/>
+        <Label text="&#xf245;" class="{{'h3 icon '+(status==2?'green':'silver')}}"/>
+        <Label text="&#xf243;" class="h3 icon silver"/>
+        <Label text="&#xf245;" class="{{'h3 icon '+(status==3?'green':'silver')}}"/>
+        <Label text="{{statusText}}" class="h4 pm_l green"/>
+    </StackLayout>
+
+    <StackLayout row="3" orientation="horizontal">
+        <Label text="Salario pretendido" class="h4 silver"/>
+        <Label text=" S/ 950" class="h4 silver"/>
+    </StackLayout>
+
+    <Image rowSpan="4" col="2" src="{{imgUrl}}" verticalAlignment="middle" height="80" width="60" class="round_s bg_grey" stretch="aspectFill"/>
+    
+</GridLayout>

@@ -9,7 +9,7 @@ actionBar {
   height: 50;
   width: 50;
   border-radius: 50;
-  vertical-align: bottom;
+  vertical-align: bottom;  
 }
 /* Custom tabstrip item class */
 .tab {
@@ -37,7 +37,7 @@ actionBar {
 .regular {
   font-family: $font_regular;
 }
-.thin { 
+.thin {
   font-family: $font_thin;
 }
 .icon {
@@ -277,6 +277,12 @@ button:active {
 }
 .round_s {
   border-radius: $radius_s;
+}
+.round_m {
+  border-radius: $radius_m;
+}
+.round_l {
+  border-radius: $radius_l;
 }
 .circle {
   border-radius: 50%;

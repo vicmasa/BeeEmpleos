@@ -1,4 +1,13 @@
 <GridLayout columns="auto,20,*" class="pm">
+    <Label col="0" text="{{alerts>0?'&#xf106;':'&#xf105;'}}" verticalAlignment="middle" class="h1 icon bg_grey round_s border_s border_dark_grey circle pm"/>
+    <Label col="0" text="{{alerts}}" class="h4 white bg_red circle bold" height="23" width="23" textAlignment="center" verticalAlignment="top" horizontalAlignment="right" marginTop="5" visibility="{{alerts>0?'visible':'collapsed'}}"/>
+    <StackLayout col="2" verticalAlignment="middle">
+        <Label text="{{name}}" class="h3 black pm_r bold"/>
+        <Label text="Hace 32 min" class="h4 silver"/>
+    </StackLayout> 
+</GridLayout>
+
+<!-- <GridLayout columns="auto,20,*" class="pm">
     <Image col="0" src="{{'~/images/avatar/'+$index+'.png'}}" verticalAlignment="middle" height="60" width="60" class="circle round_s bg_grey" stretch="aspectFill"/>
     <GridLayout col="2" rows="auto,auto,auto" columns="*,auto" verticalAlignment="middle">
         <Label col="0" text="{{name+' '+lastname}}" class="h3 black pm_r bold"/>
@@ -6,4 +15,4 @@
         <Label row="1" text="{{advertieser}}" class="h4 silver"/>
         <Label row="2" colSpan="2" text="Muy bien, te espero 👍 no olvides las proformas. Saludos" class="h4 dark_silver"/>
     </GridLayout>
-</GridLayout>
+</GridLayout> -->
