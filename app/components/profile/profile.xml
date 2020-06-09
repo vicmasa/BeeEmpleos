@@ -1,0 +1,136 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd"
+    id="profile_page"
+    loaded="onNavigatingTo"  
+    xmlns:card="components/custom/card"
+    xmlns:actionbar="components/custom/actionbar"
+    xmlns:bottomNavigation="components/custom/bottomNavigation"
+    actionBarHidden="true">
+    <!-- <GridLayout rows="*,auto">
+        <ScrollView row="0">
+            <StackLayout>
+                <StackLayout>
+                    <Image src="~/images/avatar/11.png" height="100" width="100" class="circle round_s bg_grey" stretch="aspectFill"/>
+                    <Label text="Víctor Malaver" class="h1 black center extra_bold"/>
+                    <Label text="Ingeniero de Sistemas" class="h3 silver center"/>
+                </StackLayout>
+                <StackLayout height="5000">
+                    <Tabs>
+                        <TabStrip class="h4 bg_white" textTransform="none">
+                            <TabStripItem>
+                                <Label text="Perfil"/>
+                            </TabStripItem>
+                            <TabStripItem>
+                                <Label text="Experiencia"/>
+                            </TabStripItem>
+                            <TabStripItem>
+                                <Label text="Educación"/>
+                            </TabStripItem>
+                        </TabStrip>
+                        <TabContentItem>
+                            <StackLayout class="border_s border_yellow round_s">
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                            </StackLayout>
+                        </TabContentItem>
+                        <TabContentItem>
+                            <StackLayout class="border_s border_yellow round_s">
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                            </StackLayout>
+                        </TabContentItem>
+                        <TabContentItem>
+                            <StackLayout class="border_s border_yellow round_s">
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                                <Label text="ssss" class="bg_red"/>
+                            </StackLayout>
+                        </TabContentItem>
+                    </Tabs>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+        <bottomNavigation:basic row="1"/>
+    </GridLayout> -->
+
+<GridLayout rows="*,auto">
+    <ScrollView>
+        <FlexboxLayout flexDirection="column">
+            <StackLayout>
+                <Image src="~/images/avatar/11.png" height="100" width="100" class="circle round_s bg_grey" stretch="aspectFill"/>
+                <Label text="Víctor Malaver" class="h1 black center extra_bold"/>
+                <Label text="Ingeniero de Sistemas" class="h3 silver center"/>
+            </StackLayout>
+            <!-- <StackLayout  flexGrow="1"> -->
+                <Tabs flexGrow="1">
+                    <TabStrip class="h4 bg_white" textTransform="none">
+                        <TabStripItem>
+                            <Label text="Perfil"/>
+                        </TabStripItem>
+                        <TabStripItem>
+                            <Label text="Experiencia"/>
+                        </TabStripItem>
+                        <TabStripItem>
+                            <Label text="Educación"/>
+                        </TabStripItem>
+                    </TabStrip>
+                    <TabContentItem>
+                        <StackLayout class="border_s border_yellow round_s">
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                        </StackLayout>
+                    </TabContentItem>
+                    <TabContentItem>
+                        <StackLayout class="border_s border_yellow round_s">
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                        </StackLayout>
+                    </TabContentItem>
+                    <TabContentItem>
+                        <StackLayout class="border_s border_yellow round_s">
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                            <Label text="ssss" class="bg_red"/>
+                        </StackLayout>
+                    </TabContentItem>
+                </Tabs>
+            <!-- </StackLayout> -->
+        </FlexboxLayout>
+    </ScrollView> 
+    <bottomNavigation:basic/>
+</GridLayout>
+
+</Page> 
