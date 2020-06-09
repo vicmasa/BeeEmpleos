@@ -5,6 +5,6 @@
     <Label col="1" id="nbLabel1" text="Postulaciones" class="h5 center" verticalAlignment="bottom" paddingBottom="0"/>
     <Button col="2" id="nbButton2" text="&#xf104;" class="h1 icon_nb" padding="0 0 15 0" nav="alerts/alerts" tap="tapItem"/>
     <Label col="2" id="nbLabel2" text="Alertas" class="h5 center" verticalAlignment="bottom" paddingBottom="0"/>
-    <Button col="3" id="nbButton3" text="&#xf100;" class="h1 icon_nb" padding="0 0 15 0" nav="register/register" tap="tapItem"/>
+    <Button col="3" id="nbButton3" text="&#xf100;" class="h1 icon_nb" padding="0 0 15 0" nav="profile/profile" tap="tapItem"/>
     <Label col="3" id="nbLabel3" text="Perfil" class="h5 center" verticalAlignment="bottom" paddingBottom="0"/>
 </GridLayout>

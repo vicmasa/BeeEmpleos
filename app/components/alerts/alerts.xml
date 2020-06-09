@@ -1,46 +1,51 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd"
-    id="jobs_page"
+    id="alerts_page"
     loaded="onNavigatingTo"  
     xmlns:card="components/custom/card"
     xmlns:actionbar="components/custom/actionbar"
     xmlns:bottomNavigation="components/custom/bottomNavigation">
     <actionbar:search/>
     <GridLayout rows="*,auto">
-        <Tabs row="0">
-            <TabStrip class="h4 bg_white" textTransform="none">
-                <TabStripItem>
-                    <Label text="Alertas"/>
-                </TabStripItem>
-                <TabStripItem>
-                    <Label text="Alertas por empresas"/>
-                </TabStripItem>
-            </TabStrip>
-            <TabContentItem>
-                <ListView id="listView_r0" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'" ios:marginBottom="80">
-                    <ListView.itemTemplates>
-                        <template key="title" class="bg_white"> 
-                            <Button text="Crear alerta"  option="0" tap="tapAdd" class="h2 white bold bg_primary_gradient border_primary border_s round_m center pm" margin="10"/>
-                        </template>
-                        <template key="body">
-                            <card:comment/>
-                        </template>
-                    </ListView.itemTemplates>
-                </ListView>
-            </TabContentItem>
-            <TabContentItem>
-                <ListView id="listView_r0" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'" ios:marginBottom="80">
-                    <ListView.itemTemplates>
-                        <template key="title" class="bg_white"> 
-                            <Button text="Crear alerta"  option="0" tap="tapAdd" class="h2 white bold bg_primary_gradient border_primary border_s round_m center pm" margin="10"/>
-                        </template>
-                        <template key="body">
-                            <card:comment/>
-                        </template>
-                    </ListView.itemTemplates>
-                </ListView>
-            </TabContentItem>
-        </Tabs>
+        <GridLayout row="0">
+            <Tabs>
+                <TabStrip class="h4 bg_white" textTransform="none">
+                    <TabStripItem>
+                        <Label text="Alertas"/>
+                    </TabStripItem>
+                    <TabStripItem>
+                        <Label text="Alertas por empresas"/>
+                    </TabStripItem>
+                </TabStrip>
+                <TabContentItem>
+                    <ListView id="listView_r0" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'">
+                        <ListView.itemTemplates>
+                            <template key="title">
+                                <StackLayout class="bg_white">
+                                    <Button text="Crear alerta" tap="tapAdd" class="h2 white bold bg_primary_gradient border_primary border_s round_m center pm" margin="10"/>
+                                </StackLayout> 
+                            </template>
+                            <template key="body">
+                                <card:comment/>
+                            </template>
+                        </ListView.itemTemplates>
+                    </ListView>
+                </TabContentItem>
+                <TabContentItem>
+                    <ListView id="listView_r1" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'">
+                        <ListView.itemTemplates>
+                            <template key="title">
+                                <StackLayout class="bg_white">
+                                    <Button text="Crear alerta" tap="tapAdd" class="h2 white bold bg_primary_gradient border_primary border_s round_m center pm" margin="10"/>
+                                </StackLayout>
+                            </template>
+                            <template key="body">
+                                <card:comment/>
+                            </template>
+                        </ListView.itemTemplates>
+                    </ListView>
+                </TabContentItem>
+            </Tabs>
+        </GridLayout>
         <bottomNavigation:basic row="1"/>
-        <!-- <Button row="1" text="&#xf100;" class="icon h0 white bg_green circle" height="60" width="60" textAlignment="center" verticalAlignment="bottom" horizontalAlignment="right" margin="10" androidElevation="10"/> -->
     </GridLayout>
 </Page> 
