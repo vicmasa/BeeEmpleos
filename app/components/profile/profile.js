@@ -5,7 +5,7 @@ let page;
 exports.onNavigatingTo = function (args) {
     page = args.object;
     const item = page.navigationContext;
-    //setInit(item);
+    setInit(item);
     page.bindingContext = ViewModel;
 }
 function setInit(item) {

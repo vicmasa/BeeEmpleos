@@ -5,15 +5,15 @@
     xmlns:actionbar="components/custom/actionbar"
     xmlns:bottomNavigation="components/custom/bottomNavigation"
     actionBarHidden="true">
-    <!-- <GridLayout rows="*,auto">
+    <GridLayout rows="*,auto">
         <ScrollView row="0">
             <StackLayout>
-                <StackLayout>
+                <StackLayout paddingTop="70">
                     <Image src="~/images/avatar/11.png" height="100" width="100" class="circle round_s bg_grey" stretch="aspectFill"/>
                     <Label text="Víctor Malaver" class="h1 black center extra_bold"/>
                     <Label text="Ingeniero de Sistemas" class="h3 silver center"/>
                 </StackLayout>
-                <StackLayout height="5000">
+                <StackLayout height="700">
                     <Tabs>
                         <TabStrip class="h4 bg_white" textTransform="none">
                             <TabStripItem>
@@ -27,39 +27,219 @@
                             </TabStripItem>
                         </TabStrip>
                         <TabContentItem>
-                            <StackLayout class="border_s border_yellow round_s">
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
+                            <GridLayout rows="auto,auto,auto" class="pl bg_grey">
+
+                                <GridLayout row="0">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Email: " class="h4 black bold"/>
+                                        <Label text="enrique0102@gmail.com" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Fecha de nacimiento: " class="h4 black bold"/>
+                                        <Label text="02 de enero de 1990" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Dirección: " class="h4 black bold"/>
+                                        <Label text="Cajamarca" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Celular: " class="h4 black bold"/>
+                                        <Label text="987654321" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="DNI: " class="h4 black bold"/>
+                                        <Label text="44455566" class="h3 dark_silver pl_b"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156;" class="h2 icon right black bg_dark_grey circle" height="60" width="60" verticalAlignment="top" margin="10"/>
+                                </GridLayout>
+
+                                <GridLayout row="1"  marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Mi video: " class="h4 black bold"/>
+                                        <Label text="google.com/erewjewh72" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Mi cv: " class="h4 black bold"/>
+                                        <Label text="google.com/23432iu43242" class="h3 dark_silver pl_b"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156;" class="h2 icon right black bg_dark_grey circle" height="60" width="60" verticalAlignment="top" margin="10"/>
+                                </GridLayout>
+
+                                <Button row="2" marginTop="20" text="Cerrar sesión" class="icon h3 white border_red bg_red border_s round_m"/>
+
+                            </GridLayout>
+                        </TabContentItem>
+                        <TabContentItem>
+                            <StackLayout class="pl bg_grey"> 
+
+                                <Button text="Agregar experiencia" class="icon h3 white border_primary bg_primary_gradient border_s round_m"/>
+
+                                <GridLayout rows="auto" marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Empresa: " class="h4 black bold"/>
+                                        <Label text="Nestle" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Cargo: " class="h4 black bold"/>
+                                        <Label text="google.com/23432iu43242" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Periodo: " class="h4 black bold"/>
+                                        <Label text="02-02-2020 al 02-05-2020" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Descripción: " class="h4 black bold"/>
+                                        <Label text="Realicé trabajos de control y monitoreo de planta procesadora de lacteos." class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Referencia: " class="h4 black bold"/>
+                                        <Label text="Juan Perez" class="h3 dark_silver"/>
+                                        <Label text="987654321" class="h3 dark_silver pl_b"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156;" class="h2 icon right black bg_primary_gradient circle" height="60" width="60" verticalAlignment="top" margin="10"/>
+                                </GridLayout>
+
+                                <GridLayout rows="auto" marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Empresa: " class="h4 black bold"/>
+                                        <Label text="Nestle" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Cargo: " class="h4 black bold"/>
+                                        <Label text="google.com/23432iu43242" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Periodo: " class="h4 black bold"/>
+                                        <Label text="02-02-2020 al 02-05-2020" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Descripción: " class="h4 black bold"/>
+                                        <Label text="Realicé trabajos de control y monitoreo de planta procesadora de lacteos." class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Referencia: " class="h4 black bold"/>
+                                        <Label text="Juan Perez" class="h3 dark_silver"/>
+                                        <Label text="987654321" class="h3 dark_silver pl_b"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156;" class="h2 icon right black bg_primary_gradient circle" height="60" width="60" verticalAlignment="top" margin="10"/>
+                                </GridLayout>
+
+                                <GridLayout rows="auto" marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Empresa: " class="h4 black bold"/>
+                                        <Label text="Nestle" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Cargo: " class="h4 black bold"/>
+                                        <Label text="google.com/23432iu43242" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Periodo: " class="h4 black bold"/>
+                                        <Label text="02-02-2020 al 02-05-2020" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Descripción: " class="h4 black bold"/>
+                                        <Label text="Realicé trabajos de control y monitoreo de planta procesadora de lacteos." class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Referencia: " class="h4 black bold"/>
+                                        <Label text="Juan Perez" class="h3 dark_silver"/>
+                                        <Label text="987654321" class="h3 dark_silver pl_b"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156;" class="h2 icon right black bg_primary_gradient circle" height="60" width="60" verticalAlignment="top" margin="10"/>
+                                </GridLayout>
+
+                                <GridLayout rows="auto" marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Empresa: " class="h4 black bold"/>
+                                        <Label text="Nestle" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Cargo: " class="h4 black bold"/>
+                                        <Label text="google.com/23432iu43242" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Periodo: " class="h4 black bold"/>
+                                        <Label text="02-02-2020 al 02-05-2020" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Descripción: " class="h4 black bold"/>
+                                        <Label text="Realicé trabajos de control y monitoreo de planta procesadora de lacteos." class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Referencia: " class="h4 black bold"/>
+                                        <Label text="Juan Perez" class="h3 dark_silver"/>
+                                        <Label text="987654321" class="h3 dark_silver pl_b"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156;" class="h2 icon right black bg_primary_gradient circle" height="60" width="60" verticalAlignment="top" margin="10"/>
+                                </GridLayout>
+
                             </StackLayout>
                         </TabContentItem>
                         <TabContentItem>
-                            <StackLayout class="border_s border_yellow round_s">
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                            </StackLayout>
-                        </TabContentItem>
-                        <TabContentItem>
-                            <StackLayout class="border_s border_yellow round_s">
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
-                                <Label text="ssss" class="bg_red"/>
+                            <StackLayout class="pl bg_grey"> 
+
+                                <Button text="Agregar educación" class="icon h3 white border_primary bg_primary_gradient border_s round_m"/>
+
+                                <GridLayout rows="auto" marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Título:" class="h4 black bold"/>
+                                        <Label text="Bachiller en Ingeniería de Sistemas" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Institución:" class="h4 black bold"/>
+                                        <Label text="ESAN" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Periodo: " class="h4 black bold"/>
+                                        <Label text="02-02-2020 al 02-05-2020" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Descripción: " class="h4 black bold"/>
+                                        <Label text="Realicé trabajos de control y monitoreo de planta procesadora de lacteos." class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Lugar: " class="h4 black bold"/>
+                                        <Label text="Lima" class="h3 dark_silver"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156; Editar" class="icon h3 right primary border_primary border_s round_m elevation_xs" verticalAlignment="top"/>
+                                </GridLayout>
+
+                                <GridLayout rows="auto" marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Título:" class="h4 black bold"/>
+                                        <Label text="Bachiller en Ingeniería de Sistemas" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Institución:" class="h4 black bold"/>
+                                        <Label text="ESAN" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Periodo: " class="h4 black bold"/>
+                                        <Label text="02-02-2020 al 02-05-2020" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Descripción: " class="h4 black bold"/>
+                                        <Label text="Realicé trabajos de control y monitoreo de planta procesadora de lacteos." class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Lugar: " class="h4 black bold"/>
+                                        <Label text="Lima" class="h3 dark_silver"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156; Editar" class="icon h3 right primary border_primary border_s round_m elevation_xs" verticalAlignment="top"/>
+                                </GridLayout>
+
+                                <GridLayout rows="auto" marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Título:" class="h4 black bold"/>
+                                        <Label text="Bachiller en Ingeniería de Sistemas" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Institución:" class="h4 black bold"/>
+                                        <Label text="ESAN" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Periodo: " class="h4 black bold"/>
+                                        <Label text="02-02-2020 al 02-05-2020" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Descripción: " class="h4 black bold"/>
+                                        <Label text="Realicé trabajos de control y monitoreo de planta procesadora de lacteos." class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Lugar: " class="h4 black bold"/>
+                                        <Label text="Lima" class="h3 dark_silver"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156; Editar" class="icon h3 right primary border_primary border_s round_m elevation_xs" verticalAlignment="top"/>
+                                </GridLayout>
+
+                                <GridLayout rows="auto" marginTop="20">
+                                    <StackLayout class="pm round_m bg_white border_dark_grey border_s">
+                                        <Label text="Título:" class="h4 black bold"/>
+                                        <Label text="Bachiller en Ingeniería de Sistemas" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Institución:" class="h4 black bold"/>
+                                        <Label text="ESAN" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Periodo: " class="h4 black bold"/>
+                                        <Label text="02-02-2020 al 02-05-2020" class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Descripción: " class="h4 black bold"/>
+                                        <Label text="Realicé trabajos de control y monitoreo de planta procesadora de lacteos." class="h3 dark_silver pl_b"/>
+
+                                        <Label text="Lugar: " class="h4 black bold"/>
+                                        <Label text="Lima" class="h3 dark_silver"/>
+                                    </StackLayout>
+                                    <Button text="&#xf156; Editar" class="icon h3 right primary border_primary border_s round_m elevation_xs" verticalAlignment="top"/>
+                                </GridLayout>
+
                             </StackLayout>
                         </TabContentItem>
                     </Tabs>
@@ -67,70 +247,5 @@
             </StackLayout>
         </ScrollView>
         <bottomNavigation:basic row="1"/>
-    </GridLayout> -->
-
-<GridLayout rows="*,auto">
-    <ScrollView>
-        <FlexboxLayout flexDirection="column">
-            <StackLayout>
-                <Image src="~/images/avatar/11.png" height="100" width="100" class="circle round_s bg_grey" stretch="aspectFill"/>
-                <Label text="Víctor Malaver" class="h1 black center extra_bold"/>
-                <Label text="Ingeniero de Sistemas" class="h3 silver center"/>
-            </StackLayout>
-            <!-- <StackLayout  flexGrow="1"> -->
-                <Tabs flexGrow="1">
-                    <TabStrip class="h4 bg_white" textTransform="none">
-                        <TabStripItem>
-                            <Label text="Perfil"/>
-                        </TabStripItem>
-                        <TabStripItem>
-                            <Label text="Experiencia"/>
-                        </TabStripItem>
-                        <TabStripItem>
-                            <Label text="Educación"/>
-                        </TabStripItem>
-                    </TabStrip>
-                    <TabContentItem>
-                        <StackLayout class="border_s border_yellow round_s">
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                        </StackLayout>
-                    </TabContentItem>
-                    <TabContentItem>
-                        <StackLayout class="border_s border_yellow round_s">
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                        </StackLayout>
-                    </TabContentItem>
-                    <TabContentItem>
-                        <StackLayout class="border_s border_yellow round_s">
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                            <Label text="ssss" class="bg_red"/>
-                        </StackLayout>
-                    </TabContentItem>
-                </Tabs>
-            <!-- </StackLayout> -->
-        </FlexboxLayout>
-    </ScrollView> 
-    <bottomNavigation:basic/>
-</GridLayout>
-
+    </GridLayout>
 </Page> 

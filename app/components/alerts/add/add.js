@@ -12,11 +12,7 @@ exports.onNavigatingTo = function (args) {
     page.bindingContext = ViewModel;
 }
 function setInit(item) {
-    loadSearch();
-    setScrollers();
-}
-function setScrollers(){
-    ViewModel.set('repeater_select', ['Gerente de operaciones', 'Supervisor', 'Fiscalizador', 'Superintendente de IT']);
+
 }
 exports.tapButton = function (args) {
     const btn = args.object;
@@ -37,89 +33,7 @@ exports.tapButton = function (args) {
         //console.log(e.message);
     });
 }
-function setChangeSearch(isSearch) {
-    ViewModel.set('isSearch', isSearch);
-    console.log(ViewModel.get('isSearch'));
-}
-function loadSearch() {
-    const items = ['Lider de proyecto',
-        'Supervisor de operaciones',
-        'Jefe de operación',
-        'COO',
-        'Analita de proyectos',
-        'Porject manager'];
-    ViewModel.set('items', items);
-    setChangeSearch(false);
-}
-exports.itemTap = function (args) {
-    //const item = args.view.bindingContext;
-    setChangeSearch(false);
-}
-function getData() {
-    const items = [{
-        name: 'Gerente general'
-    }, {
-        name: 'Gerente de operaciones'
-    }, {
-        name: 'Gerente financiero'
-    }, {
-        name: 'Gerente de empresa'
-    }, {
-        name: 'Gerente de ventas'
-    }, {
-        name: 'Gerente financiero'
-    }, {
-        name: 'Gerente de innovación'
-    }, {
-        name: 'Gerente comercial'
-    }, {
-        name: 'Gerente de marketing'
-    }, {
-        name: 'Gerente'
-    }, {
-        name: 'Gerente general'
-    }, {
-        name: 'Gerente de operaciones'
-    }, {
-        name: 'Gerente financiero'
-    }, {
-        name: 'Gerente de empresa'
-    }, {
-        name: 'Gerente de ventas'
-    }, {
-        name: 'Gerente financiero'
-    }, {
-        name: 'Gerente de innovación'
-    }, {
-        name: 'Gerente comercial'
-    }, {
-        name: 'Gerente de marketing'
-    }, {
-        name: 'Gerente'
-    }, {
-        name: 'Gerente general'
-    }, {
-        name: 'Gerente de operaciones'
-    }, {
-        name: 'Gerente financiero'
-    }, {
-        name: 'Gerente de empresa'
-    }, {
-        name: 'Gerente de ventas'
-    }, {
-        name: 'Gerente financiero'
-    }, {
-        name: 'Gerente de innovación'
-    }, {
-        name: 'Gerente comercial'
-    }, {
-        name: 'Gerente de marketing'
-    }, {
-        name: 'Gerente'
-    }];
-    ViewModel.set('listView_search', items);
-    setChangeSearch(true);
-}
+
 //logic search
 function hideKeyBoard(searchBar) {
     if (searchBar.ios) {

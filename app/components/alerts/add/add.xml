@@ -6,38 +6,20 @@
     <actionbar:close/>
     
         <StackLayout class="pl"> 
-            <Label text="Buscar" class="h0 primary extra_bold fadeInUp1 pl_b"/>
+            <Label text="Crear alerta" class="h0 primary extra_bold fadeInUp1 pl_b"/> 
             
+            <Label text="Ingrese puesto de trabajo" class="h4 silver pl_t_b fadeInUp2" visibility="{{isSearch?'collapse':'visible'}}"/>
             <Android>
-                <StackLayout class="bg_dark_grey fadeInUp2 round_m">
+                <StackLayout class="bg_dark_grey fadeInUp3 round_m">
                     <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" borderColor="red" borderWidth="1"/>
                 </StackLayout>
             </Android>
             <ios>
-                <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" class="fadeInUp2"/>
+                <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" class="fadeInUp3"/>
             </ios>
 
-            <Label text="Sugerencias" class="h4 silver pl_t_b fadeInUp2" visibility="{{isSearch?'collapse':'visible'}}"/>
-            <scrollers:scrollers class="fadeInUp2" marginBottom="30" visibility="{{isSearch?'collapse':'visible'}}"/>
+            <Button text="Guardar alerta" class="icon h3 white border_primary bg_primary_gradient border_s round_m fadeInUp4" androidElevation="0" marginTop="20"/>
 
-            <Label text="Búsquedas recientes" class="h4 silver pl_t_b fadeInUp3" visibility="{{isSearch?'collapse':'visible'}}"/>            
-            <ScrollView class="fadeInUp4" visibility="{{isSearch?'collapsed':'visible'}}">
-                <Repeater id="repeater" items="{{items}}" class="border_s round_m border_primary">
-                    <Repeater.itemTemplate> 
-                        <GridLayout columns="*,auto" class="pm_l_r line">
-                            <Label col="0" text="{{$value}}" class="h3 middle dark_silver"/>
-                            <Button col="1" text="&#xf254;" class="icon h2 circle dark_silver" tap="tapButton"/>
-                        </GridLayout>
-                    </Repeater.itemTemplate>
-                </Repeater>
-            </ScrollView>
-
-            <ListView id="listView_search" items="{{listView_search}}" itemTap="itemTap" visibility="{{isSearch?'visible':'collapsed'}}">
-                <ListView.itemTemplate> 
-                    <Label text="{{name}}" class="pm"/>
-                </ListView.itemTemplate>
-            </ListView>
-        
         </StackLayout>
     
 </Page>

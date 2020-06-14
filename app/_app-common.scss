@@ -9,7 +9,7 @@ actionBar {
   height: 50;
   width: 50;
   border-radius: 50;
-  vertical-align: bottom;  
+  vertical-align: bottom;
 }
 /* Custom tabstrip item class */
 .tab {
@@ -266,14 +266,67 @@ actionBar {
 .border_disabled {
   border-color: $disabled;
 }
+/*ELEVATION*/
+.elevation_xs {
+  android-elevation: 0;
+  android-dynamic-elevation-offset: 0;
+}
+.elevation_s {
+  android-elevation: 1;
+  android-dynamic-elevation-offset: 1;
+}
+.elevation_m {
+  android-elevation: 3;
+  android-dynamic-elevation-offset: 3;
+}
+.elevation_l {
+  android-elevation: 5;
+  android-dynamic-elevation-offset: 5;
+}
 /*BUTONS*/
 button {
   border-radius: $radius_s;
   text-transform: none;
 }
-button:active {
-  background-color: #fec400;
-  color: black;
+@keyframes -hightlight-bg_white {
+  0% {
+    background-color: $white;
+  }
+  100% {
+    background-color: $primary;
+  }
+}
+@keyframes -hightlight-bg_dark_grey {
+  0% {
+    background-color: $dark_grey;
+  }
+  100% {
+    background-color: $primary;
+  }
+}
+@keyframes -hightlight-bg_red {
+  0% {
+    background-color: $primary;
+  }
+  100% {
+    background-color: $red;
+  }
+}
+button.bg_primary_gradient:active {
+  color: $black;
+  background: $white;
+}
+button.bg_white:active {
+  animation: -hightlight-bg_white 0.3s ease-out forwards;
+}
+button.bg_disabled:active {
+  animation: -hightlight-bg_white 0.3s ease-out forwards;
+}
+button.bg_dark_grey:active {
+  animation: -hightlight-bg_dark_grey 0.3s ease-out forwards;
+}
+button.bg_red:active {
+  animation: -hightlight-bg_red 0.3s ease-out forwards;
 }
 .round_s {
   border-radius: $radius_s;

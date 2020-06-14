@@ -1,4 +1,4 @@
 <GridLayout>
     <Image src="{{imgUrl}}" height="250" stretch="aspectFill"/>
-    <Label tap="tapBack" text="&#xf1ca;" class="h2 icon white circle bg_disabled left pm" verticalAlignment="top" margin="20"/>
+    <Button tap="tapBack" text="&#xf1ca;" class="h2 icon white circle bg_disabled left pm elevation_xs" verticalAlignment="top" height="60" width="60" margin="20"/>
 </GridLayout>

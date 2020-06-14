@@ -1,8 +1,8 @@
 <StackLayout xmlns:stars="components/custom/stars">
-    <GridLayout columns="*,auto,auto">
-        <Label col="0" text="{{status}}" class="h2 dark_silver pl_l"/>
-        <Label col="1" tap="tapHeart" text="&#xf1a5;" class="h2 icon black pl"/>
-        <Label col="2" tap="tapShared" text="&#xf21a;" class="h2 icon black pl"/>
+    <GridLayout columns="*,auto,auto" class="pl_l_r">
+        <Label col="0" text="Enviado" class="h4 left green border_green border_s round_s" padding="2 5 2 5" verticalAlignment="middle"/>
+        <Button col="1" tap="tapHeart" text="&#xf105;" class="h2 icon black bg_white circle" height="60" width="60" androidElevation="0" androidDynamicElevationOffset="0"/>
+        <Button col="2" tap="tapShared" text="&#xf21a;" class="h2 icon black bg_white circle" height="60" width="60" androidElevation="0" androidDynamicElevationOffset="0"/>
     </GridLayout>
     <Label text="{{quantity+' '+name}}" class="h1 black extra_bold pl_l_r"/>
     <GridLayout columns="*,auto" class="pl_l_r">

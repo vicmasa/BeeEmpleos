@@ -11,7 +11,7 @@
             
             <Android>
                 <StackLayout class="bg_dark_grey fadeInUp2 round_m">
-                    <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" borderColor="red" borderWidth="1"/>
+                    <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" class="elevation_xs"/>
                 </StackLayout>
             </Android>
             <ios>
