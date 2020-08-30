@@ -10,9 +10,9 @@
             <Label text="Buscar" class="h0 primary extra_bold fadeInUp1 pl_b"/>
             
             <Android>
-                <StackLayout class="bg_dark_grey fadeInUp2 round_m">
+                <StackLayout id="searchBarParent" class="fadeInUp2 round_m">
                     <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" class="elevation_xs"/>
-                </StackLayout>
+                </StackLayout> 
             </Android>
             <ios>
                 <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" class="fadeInUp2"/> 

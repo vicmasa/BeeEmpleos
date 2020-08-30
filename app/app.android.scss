@@ -1,2 +1,30 @@
 @import 'app-variables';
 @import 'app-common';
+
+/*TabStrip*/
+.ns-dark TabStrip {
+    selected-item-color   : white;
+    un-selected-item-color: white;
+    highlight-color       : #fec400;
+}
+
+.ns-dark #navigationBottom button:active,
+.ns-dark #navigationBottom label:active {
+    color           : black;
+    background-color: #fec400;
+}
+
+.ns-dark #navigationBottom .selected,
+.ns-dark #navigationBottom .selected {
+    color: #fec400;
+}
+ 
+.ns-dark SearchBar { 
+    color                      : white;
+    background-color           : transparent;
+    text-field-background-color: transparent;  
+    text-fieldHint-color       : whitesmoke;
+}
+.ns-dark #searchBarParent {
+    background-color           : #fec400;
+} 
