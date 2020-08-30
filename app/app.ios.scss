@@ -1,2 +1,115 @@
-@import 'app-variables';
-@import 'app-common';
+@import "app-variables";
+@import "app-common";
+
+.ns-dark Page {
+  background-color: #212121;
+}
+
+.ns-dark ActionBar {
+  background-color: #212121;
+}
+
+.ns-dark .modal {
+  background-color: #212121;
+}
+
+.ns-light TabView {
+  selected-tab-text-color             : black;
+  android-selected-tab-highlight-color: black;
+}
+
+.ns-dark TabView {
+  selected-tab-text-color             : #3d9be9;
+  android-selected-tab-highlight-color: #3d9be9;
+}
+
+.ns-dark GridLayout[class*="animated_"] {
+  background-color: #424242;
+}
+
+.ns-dark .black {
+  color: #ffffff;
+}
+
+.ns-dark .dark_silver {
+  color: #fafafa;
+}
+.ns-dark button.dark_silver {
+  color: black;
+}
+
+.ns-dark .bg_white {
+  background-color: #212121;
+}
+
+.ns-dark .bg_grey {
+  background-color: #000000;
+}
+
+.ns-dark .bg_dark_grey {
+  background-color: #616161;
+}
+
+.ns-dark .bg_silver {
+  background-color: #424242;
+}
+
+.ns-dark .bg_dark_silver {
+  background-color: #212121;
+}
+
+.ns-dark .border_white {
+  border-color: #212121;
+}
+
+.ns-dark .border_dark_grey {
+  border-color: #616161;
+}
+
+/*bottom navigation*/
+.ns-dark #navigationBottom {
+  border-top-color: #757575;
+  border-top-width: 0.5;
+}
+
+.ns-dark #navigationBottom button,
+.ns-dark #navigationBottom label {
+  color       : silver;
+  border-width: 0;
+  z-index     : 0;
+}
+
+.ns-dark #navigationBottom button:active,
+.ns-dark #navigationBottom label:active {
+  color           : black;
+  background-color: #fec400;
+}
+
+.ns-dark #navigationBottom .selected,
+.ns-dark #navigationBottom .selected {
+  color: #fec400;
+}
+
+/*TabStrip*/
+.ns-dark TabStrip {
+  selected-item-color   : white;
+  un-selected-item-color: white;
+  highlight-color       : #fec400;
+}
+
+/*Search*/
+SearchBar {
+  margin: -10;
+}
+
+.ns-dark SearchBar {
+  color                      : black;
+  background-color           : #212121;
+  text-field-background-color: white;
+  text-fieldHint-color       : whitesmoke;
+}
+
+/*Scrollers*/
+.ns-dark #repeater_select button {
+  color: white;
+}

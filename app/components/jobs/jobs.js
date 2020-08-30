@@ -14,8 +14,8 @@ function setInit(item) {
         console.log(i, item[i]);
     }
     page.getViewById('nbButton0').text = '\uf107';
-    page.getViewById('nbButton0').color = 'black';
-    page.getViewById('nbLabel0').color = 'black';
+    page.getViewById('nbButton0').className += ' selected';
+    page.getViewById('nbLabel0').className += ' selected';
 }
 exports.cardLoaded = function (args) {
     const layer = args.object.ios.layer;

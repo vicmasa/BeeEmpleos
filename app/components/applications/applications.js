@@ -14,8 +14,8 @@ function setInit(item) {
         console.log(i, item[i]);
     } 
     page.getViewById('nbButton' + item.nbSelected).text = '\uf103';
-    page.getViewById('nbButton' + item.nbSelected).color = 'black';
-    page.getViewById('nbLabel' + item.nbSelected).color = 'black';
+    page.getViewById('nbButton' + item.nbSelected).className += ' selected';
+    page.getViewById('nbLabel' + item.nbSelected).className += ' selected';
 }
 exports.onItemTap = function (args) {
 	const item = args.view.bindingContext;

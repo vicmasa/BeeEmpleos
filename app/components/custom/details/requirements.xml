@@ -1,5 +1,5 @@
-<StackLayout class="pl">
-    <Label text="{{requirementsTitle}}" class="h3 black bold pm_t_b"/>
+<StackLayout class="pl round_m bg_white border_dark_grey border_s">
+    <Label text="{{requirementsTitle}}" class="h3 black bold pm_b"/>
     <Repeater items="{{ requirements }}">
         <Repeater.itemsLayout>
             <StackLayout/>

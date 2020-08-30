@@ -17,11 +17,11 @@
                     </TabStripItem>
                 </TabStrip>
                 <TabContentItem>
-                    <ListView id="listView_r0" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'">
+                    <ListView id="listView_r0" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index == 0 ? 'title' : 'body'">
                         <ListView.itemTemplates>
                             <template key="title">
                                 <StackLayout class="bg_white">
-                                    <Button text="Crear alerta" tap="tapAdd" class="h2 white bold bg_primary_gradient border_primary border_s round_m center pm" margin="10"/>
+                                    <Button text="Crear alerta" tap="tapAdd" class="white bg_primary_gradient border_primary border_s round_m center pm" margin="10"/>
                                 </StackLayout> 
                             </template>
                             <template key="body">
@@ -31,11 +31,11 @@
                     </ListView>
                 </TabContentItem>
                 <TabContentItem>
-                    <ListView id="listView_r1" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index === 0 ? 'title' : 'body'">
+                    <ListView id="listView_r1" items="{{items}}" itemTap="onItemTap" itemTemplateSelector="$index == 0 ? 'title' : 'body'">
                         <ListView.itemTemplates>
                             <template key="title">
                                 <StackLayout class="bg_white">
-                                    <Button text="Crear alerta" tap="tapAdd" class="h2 white bold bg_primary_gradient border_primary border_s round_m center pm" margin="10"/>
+                                    <Button text="Crear alerta" tap="tapAdd" class="white bg_primary_gradient border_primary border_s round_m center pm" margin="10"/>
                                 </StackLayout>
                             </template>
                             <template key="body">
@@ -48,4 +48,4 @@
         </GridLayout>
         <bottomNavigation:basic row="1"/>
     </GridLayout>
-</Page> 
+</Page>

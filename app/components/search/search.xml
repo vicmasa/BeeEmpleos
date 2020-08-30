@@ -15,7 +15,7 @@
                 </StackLayout>
             </Android>
             <ios>
-                <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" class="fadeInUp2"/>
+                <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" class="fadeInUp2"/> 
             </ios>
 
             <Label text="Sugerencias" class="h4 silver pl_t_b fadeInUp2" visibility="{{isSearch?'collapse':'visible'}}"/>

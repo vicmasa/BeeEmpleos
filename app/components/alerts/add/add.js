@@ -56,7 +56,7 @@ exports.setSearchBar = function (args) {
             // ViewModel.set('offset', undefined);
             // ViewModel.set('last_page', undefined);
             //if (ViewModel.get('loaded')) {
-            getData();
+            //getData();
             //}
             timer = 0;
         }, 1000);

@@ -18,7 +18,7 @@
                 <SearchBar id="searchBar" hint="{{sbHint}}" text="{{sbText}}" loaded="setSearchBar" class="fadeInUp3"/>
             </ios>
 
-            <Button text="Guardar alerta" class="icon h3 white border_primary bg_primary_gradient border_s round_m fadeInUp4" androidElevation="0" marginTop="20"/>
+            <Button text="Guardar alerta" class="icon h3 white border_primary bg_primary_gradient border_s round_m pm fadeInUp4" androidElevation="0" marginTop="20"/>
 
         </StackLayout>
     

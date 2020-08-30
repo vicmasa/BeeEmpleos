@@ -8,12 +8,14 @@
     xmlns:buttonBottom="components/custom/buttonBottom">
 
     <GridLayout rows="*,auto" android:paddingTop="21">
-        <ScrollView row="0">
-            <StackLayout>
+        <ScrollView row="0"> 
+            <StackLayout class="bg_grey">
                 <image:single/>
-                <profile:hive/>
-                <details:requirements/>
-                <details:description/>
+                <StackLayout margin="0 20 0 20">
+                    <profile:hive/>
+                    <details:requirements marginTop="20"/>
+                    <details:description marginTop="20"/>
+                </StackLayout>
             </StackLayout>
         </ScrollView>
         <buttonBottom:single row="1"/>

@@ -1,4 +1,4 @@
-<GridLayout id="navigationBottom" row="1" columns="*,*,*,*" verticalAlignment="bottom" backgroundColor="white">
+<GridLayout id="navigationBottom" row="1" columns="*,*,*,*" verticalAlignment="bottom">
     <Button col="0" id="nbButton0" text="&#xf106;" class="h1 icon_nb" padding="0 0 15 0" nav="jobs/jobs" tap="tapItem"/>
     <Label col="0" id="nbLabel0" text="Empleos" class="h5 center" verticalAlignment="bottom" paddingBottom="0"/>
     <Button col="1" id="nbButton1" text="&#xf102;" class="h1 icon_nb" padding="0 0 15 0" nav="applications/applications" tap="tapItem"/>

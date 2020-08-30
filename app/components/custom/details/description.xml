@@ -1,5 +1,5 @@
-<StackLayout class="pl"> 
-    <Label text="{{descriptionTitle}}" class="h3 black bold pm_t_b"/>
+<StackLayout class="pl round_m bg_white border_dark_grey border_s">
+    <Label text="{{descriptionTitle}}" class="h3 black bold pm_b"/>
     <Label class="h4 black" textWrap="true" text="Somos una empresa del sector industrial que se encuentra en la búsqueda de personal para cubrir el puesto de: PORTERO-VIGILANTE . Deberá ser una persona proactiva, con facilidad de palabra e interacción con las personas a diferente nivel,honrado, responsable y con adaptabilidad al cambio.
 
         FUNCIONES PRINCIPALES:

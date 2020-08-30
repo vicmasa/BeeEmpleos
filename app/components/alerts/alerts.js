@@ -13,8 +13,8 @@ function setInit(item) {
         console.log(i, item[i]);
     }
     page.getViewById('nbButton' + item.nbSelected).text = '\uf105';
-    page.getViewById('nbButton' + item.nbSelected).color = 'black';
-    page.getViewById('nbLabel' + item.nbSelected).color = 'black';
+    page.getViewById('nbButton' + item.nbSelected).className += ' selected';
+    page.getViewById('nbLabel' + item.nbSelected).className += ' selected';
 }
 exports.tapAdd = function (args) {
     const item = args.object;
